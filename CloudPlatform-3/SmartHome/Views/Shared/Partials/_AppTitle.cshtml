@@ -1,0 +1,16 @@
+﻿@model int
+
+<header class="app-title">
+    <div class="title"><i class="fa-duotone fa-house me-3"></i>Smart Home</div>
+    <div class="device-count">
+        @if(Model == 1)
+        {
+            <span>@Model DEVICE</span>
+        } else
+        {
+            <span>@Model DEVICES</span>
+        }
+
+        
+    </div>
+</header>

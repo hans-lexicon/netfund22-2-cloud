@@ -1,0 +1,7 @@
+﻿@using WebApp.ViewModels.Home;
+@model IndexViewModel
+
+@foreach(var regdevice in Model.DevicesFromRegistryManager)
+{
+    <div>@regdevice.DeviceId</div>
+}

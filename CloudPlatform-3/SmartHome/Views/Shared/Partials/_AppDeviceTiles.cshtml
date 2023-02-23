@@ -1,0 +1,10 @@
+﻿@model IEnumerable<DeviceTile>
+
+<section class="devices">
+
+    @foreach(var device in Model)
+    {
+        <partial name="~/Views/Shared/Partials/_DeviceTile.cshtml" model="@device" />
+    }
+
+</section>

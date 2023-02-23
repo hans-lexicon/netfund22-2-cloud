@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NETFUND22-2\\cloud\\CloudPlatform-3\\SmartHome\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NETFUND22-2\\cloud\\CloudPlatform-3\\SmartHome\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NETFUND22-2\\cloud\\CloudPlatform-3\\SmartHome\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SmartHome.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.SmartHome.props",
+      "PackagePath": "build\\SmartHome.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.SmartHome.props",
+      "PackagePath": "buildMultiTargeting\\SmartHome.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.SmartHome.props",
+      "PackagePath": "buildTransitive\\SmartHome.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

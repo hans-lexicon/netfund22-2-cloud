@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700&display=swap");
+
+body {
+    background-color: #283142;
+    font-family: "Manrope", sans-serif;
+}
+
+
+.smart-home .container {
+    padding: 20px;
+}
+
+    .smart-home .container .app-settings {
+        grid-area: app-settings;
+        display: flex;
+        justify-content: flex-end;
+        color: #8A93A3;
+        font-size: 1.8em;
+        text-decoration: none;
+    }
+        .smart-home .container .app-settings:hover {
+            color: #EBF2FB;
+        }
+
+    .smart-home .container .app-title {
+        margin-top: 50px;
+        color: #EBF2FB;
+        font-weight: 200;
+        text-align: center;
+    }
+        .smart-home .container .app-title .title {
+            font-size: 2.3em;
+        }
+
+        .smart-home .container .app-title .device-count {
+            font-size: 1.1em;
+            color: #8A93A3;
+        }
+
+    .smart-home .container .temperature-measurement {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .smart-home .container .temperature-measurement .temperature {
+            flex: 1;
+            display: flex;
+            justify-content: start;
+        }
+            .smart-home .container .temperature-measurement .temperature .current {
+                text-align: center;
+            }
+                .smart-home .container .temperature-measurement .temperature .current .current-temperature {
+                    color: #05DDF4;
+                    font-size: 3em;
+                    font-weight: 200;
+                    line-height: 1;
+                    text-shadow: 3px 3px 10px rgba(5, 221, 244, 0.4);
+                }
+                .smart-home .container .temperature-measurement .temperature .current .current-temperature-title {
+                    color: #EBF2FB;
+                    font-size: 0.8em;
+                    font-weight: 700;
+                }
+
+        .smart-home .container .temperature-measurement .set-temperature-range {
+            flex: 2;
+            display: block;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #1E2736;
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            margin: 0 auto;
+            outline: 0;
+        }
+            .smart-home .container .temperature-measurement .set-temperature-range::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                background-color: #454F5D;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                cursor: pointer;
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
+            }
+
+    .smart-home .container .devices {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+    }
+        .smart-home .container .devices .device-card {
+            height: 150px;
+            background: rgb(51, 60, 77);
+            background: linear-gradient(180deg, rgb(51, 60, 77) 0%, rgb(39, 49, 65) 100%);
+            border-radius: 20px;
+            box-shadow: 0 8px 8px 4px rgba(30, 39, 54, 0.4);
+            padding: 10px;
+            display: grid !important;
+            grid-template-rows: 1fr 2fr;
+            border: none;
+            text-decoration: none;
+        }
+            .smart-home .container .devices .device-card:hover {
+                background: rgb(51, 60, 77);
+                background: linear-gradient(180deg, rgb(51, 60, 77) 0%, rgb(51, 60, 77) 100%);
+            }
+            .smart-home .container .devices .device-card .device-card-title {
+                height: 100%;
+                color: #8A93A3;
+                font-size: 0.8em;
+                font-weight: 500;
+                text-align: center;
+            }
+                .smart-home .container .devices .device-card .device-card-title.active {
+                    color: #EBF2FB;
+                }
+
+            .smart-home .container .devices .device-card .device-card-icon {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .smart-home .container .devices .device-card .device-card-icon .icon-circle {
+                    background-color: #454F5D;
+                    border-radius: 50%;
+                    height: 65px;
+                    width: 65px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2em;
+                    color: #8A93A3;
+                    box-shadow: 0 0 8px 3px rgba(30, 39, 54, 0.4);
+                }
+                    .smart-home .container .devices .device-card .device-card-icon .icon-circle.active {
+                        background-color: rgb(5, 221, 244);
+                        color: #EBF2FB;
+                        box-shadow: 0 0 8px 3px rgba(5, 221, 244, 0.4);
+                    }
+
+@media(min-width: 992px) {
+    .smart-home .container .devices {
+        margin-top: 70px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}

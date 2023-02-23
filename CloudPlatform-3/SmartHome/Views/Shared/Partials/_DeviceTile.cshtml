@@ -1,0 +1,34 @@
+﻿@model DeviceTile
+
+<a asp-controller="Devices" asp-action="DirectMethod" asp-route-id="@Model.DeviceId" class="device-card">
+    <div class="device-card-title @(Model.IsEnabled ? "active" : "")">@Model.CommonName</div>
+    <div class="device-card-icon">
+        <div class="icon-circle @(Model.IsEnabled ? "active" : "")">
+            
+            @if(Model.DeviceType != null) {
+                @switch (Model.DeviceType?.ToLower())
+                {
+                    case "light":
+                        <i class="fa-regular fa-lightbulb"></i>
+                        break;
+
+                    case "fan":
+                        <i class="fa-regular fa-fan"></i>
+                        break;
+
+                    case "ac":
+                        <i class="fa-regular fa-air-conditioner"></i>
+                        break;
+
+                    default:
+                        <i class="fa-regular fa-microchip"></i>
+                        break;
+                }
+            }    
+            else {
+                <i class="fa-regular fa-microchip"></i>
+            }
+
+        </div>
+    </div>
+</a>

@@ -1,0 +1,11 @@
+﻿@model TemperatureMeasurement
+
+<section class="temperature-measurement">
+    <div class="temperature">
+        <div class="current">
+            <div class="current-temperature">@Model.CurrentTemperature°</div>
+            <div class="current-temperature-title">temperature</div>
+        </div>
+    </div>
+    <input class="set-temperature-range" type="range" value="@Model.CurrentTemperature" min="@Model.MinValue" max="@Model.MaxValue" step="1">
+</section>

@@ -1,0 +1,10 @@
+﻿@model IndexViewModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<partial name="~/Views/Shared/Partials/_AppSettings.cshtml" />
+<partial name="~/Views/Shared/Partials/_AppTitle.cshtml" model="@Model.DeviceCount" />
+<partial name="~/Views/Shared/Partials/_AppTemperatureMeasurement.cshtml" model="@Model.TemperatureMeasurement" />
+<partial name="~/Views/Shared/Partials/_AppDeviceTiles.cshtml" model="@Model.Devices" />
